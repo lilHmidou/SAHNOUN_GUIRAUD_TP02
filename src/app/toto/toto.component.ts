@@ -23,7 +23,7 @@ import {ServiceCoursService} from "../service/service-cours.service";
 })
 export class TotoComponent implements OnInit{
 
-    public valourService:string = '';
+    public valeurService:string = '';
 
     // @Output() colorChange = new EventEmitter();
 
@@ -31,7 +31,7 @@ export class TotoComponent implements OnInit{
     }
 
     ngOnInit() {
-        this.valourService = this.service.variableDuService;
+        this.valeurService = this.service.variableDuService;
     }
 
     // public changeColor() {
