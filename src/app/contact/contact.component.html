@@ -1,1 +1,57 @@
-<p>contact works!</p>
+<div class="form-container">
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <!-- Prénom -->
+    <div class="form-group">
+      <label for="firstName">Prénom</label>
+      <input id="firstName" formControlName="firstName" type="text" />
+      <div class="error" *ngIf="contactForm.get('firstName')?.touched && contactForm.get('firstName')?.invalid">
+        Prénom est requis.
+      </div>
+    </div>
+
+    <!-- Nom -->
+    <div class="form-group">
+      <label for="lastName">Nom</label>
+      <input id="lastName" formControlName="lastName" type="text" />
+      <div class="error" *ngIf="contactForm.get('lastName')?.touched && contactForm.get('lastName')?.invalid">
+        Nom est requis.
+      </div>
+    </div>
+
+    <!-- Âge -->
+    <div class="form-group">
+      <label for="age">Âge</label>
+      <input id="age" formControlName="age" type="number" />
+    </div>
+
+    <!-- Hide Email -->
+    <div class="form-group">
+      <label>
+        <input type="checkbox" formControlName="hideEmail" (change)="toggleEmailValidation()" /> Hide Email
+      </label>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group" *ngIf="!contactForm.get('hideEmail')?.value">
+      <label for="email">Email</label>
+      <input id="email" formControlName="email" type="email" />
+      <div class="error" *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
+        <span *ngIf="contactForm.get('email')?.errors?.['required']">Email est requis.</span>
+        <span *ngIf="contactForm.get('email')?.errors?.['email']">Email doit contenir un '&#64;'.</span>
+      </div>
+    </div>
+
+    <!-- Commentaire -->
+    <div class="form-group">
+      <label for="comment">Commentaire</label>
+      <textarea id="comment" formControlName="comment"></textarea>
+      <div class="error" *ngIf="contactForm.get('comment')?.touched && contactForm.get('comment')?.invalid">
+        Commentaire est requis.
+      </div>
+    </div>
+
+    <!-- Bouton Envoyer -->
+    <button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
+  </form>
+</div>
+
