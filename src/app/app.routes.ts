@@ -3,6 +3,7 @@ import {RouteComponent} from "./route/route.component";
 import {TotoComponent} from "./toto/toto.component";
 import {RouteChildComponent} from "./route/route-child/route-child.component";
 import {FormComponent} from "./form/form.component";
+import {ContactComponent} from "./contact/contact.component";
 
 export const routes: Routes = [
     {
@@ -14,6 +15,7 @@ export const routes: Routes = [
     },
     { path: 'form', component: FormComponent },
     { path: 'toto', component: TotoComponent },
+    { path: 'contact', component: ContactComponent },
     { path: '', redirectTo: 'route', pathMatch: 'full'}, // redirige vers l'url app les url vide
     { path: '**', component: RouteComponent} // redirige vers RouteComponent les url qui ne sont pas définis ici
 ];

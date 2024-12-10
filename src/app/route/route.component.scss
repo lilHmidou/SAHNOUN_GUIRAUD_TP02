@@ -1,0 +1,7 @@
+/* CSS pour l'image centrée avec des bords arrondis et une ombre portée */
+.centered-image {
+  display: block; /* Permet à l'image de se comporter comme un bloc */
+  margin: 0 auto; /* Centre l'image horizontalement */
+  border-radius: 15px; /* Arrondir les bords de l'image */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée légère */
+}

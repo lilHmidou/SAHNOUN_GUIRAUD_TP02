@@ -45,7 +45,6 @@
   align-items: center; /* Aligne verticalement les éléments */
   position: relative; /* Nécessaire pour le positionnement du bouton */
   bottom: 0;
-  width: 100%;
 }
 
 .footer p {
@@ -64,3 +63,5 @@
 .footer-button:hover {
   background-color: darkred; /* Changer la couleur au survol */
 }
+
+
