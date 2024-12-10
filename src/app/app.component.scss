@@ -5,3 +5,62 @@
 .blue {
   color: blue;
 }
+
+/* app.component.css */
+.header {
+  background-color: crimson; /* Fond crimson red */
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+}
+
+.header nav ul {
+  list-style-type: none; /* Supprime les puces de la liste */
+  padding: 0;
+  margin: 0;
+}
+
+.header nav ul li {
+  display: inline; /* Affiche les éléments en ligne */
+  margin-right: 20px; /* Espace entre les éléments */
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none; /* Supprime le soulignement des liens */
+  font-size: 18px;
+}
+
+.header nav ul li a:hover {
+  text-decoration: underline; /* Ajoute un soulignement au survol */
+}
+
+/* Style pour le footer */
+.footer {
+  background-color: #333; /* Fond sombre */
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Espace entre le texte et le bouton */
+  align-items: center; /* Aligne verticalement les éléments */
+  position: relative; /* Nécessaire pour le positionnement du bouton */
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0; /* Supprime la marge par défaut du <p> */
+}
+
+.footer-button {
+  background-color: crimson; /* Bouton avec la même couleur que l'en-tête */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer-button:hover {
+  background-color: darkred; /* Changer la couleur au survol */
+}
