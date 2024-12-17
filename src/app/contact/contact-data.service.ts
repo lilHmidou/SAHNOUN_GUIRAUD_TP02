@@ -15,7 +15,7 @@ interface FormData {
 
 export class FormDataService {
   private formDataSubject = new BehaviorSubject<FormData | null>(null);
-  formData$ = this.formDataSubject.asObservable();
+  public formData$ = this.formDataSubject.asObservable();
 
   constructor() {}
 
