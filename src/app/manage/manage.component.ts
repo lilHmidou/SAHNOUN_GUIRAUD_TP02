@@ -13,7 +13,7 @@ import {NgIf} from "@angular/common";
   styleUrl: './manage.component.scss'
 })
 export class ManageComponent implements OnInit{
-  formData: any = null;
+  public formData: any = null;
 
   constructor(private formDataService: FormDataService) {}
 

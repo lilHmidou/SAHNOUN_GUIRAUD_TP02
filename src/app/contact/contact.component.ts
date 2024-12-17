@@ -15,12 +15,13 @@ import {FormDataService} from "./contact-data.service";
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  contactForm: FormGroup;
+  protected contactForm: FormGroup;
 
   constructor(
     private fb: FormBuilder,
     private router: Router,
     private formDataService: FormDataService) {
+
     this.contactForm = this.fb.group({
       firstName: ['',Validators.required],
       lastName: ['',Validators.required],
