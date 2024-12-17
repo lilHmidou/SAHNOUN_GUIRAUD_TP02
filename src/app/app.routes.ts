@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import {RouteComponent} from "./route/route.component";
-import {TotoComponent} from "./toto/toto.component";
 import {FormComponent} from "./form/form.component";
 import {ContactComponent} from "./contact/contact.component";
 import {ListeComponent} from "./liste/liste.component";
@@ -24,7 +23,6 @@ export const routes: Routes = [
         ]
     },
     { path: 'form', component: FormComponent },
-    { path: 'toto', component: TotoComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'manage', component: ManageComponent },
     { path: 'list', component: ListeComponent},
