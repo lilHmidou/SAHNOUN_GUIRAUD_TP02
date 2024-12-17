@@ -15,7 +15,7 @@ import {FormDataService} from "./contact-data.service";
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  protected contactForm: FormGroup;
+  public contactForm: FormGroup;
 
   constructor(
     private fb: FormBuilder,
