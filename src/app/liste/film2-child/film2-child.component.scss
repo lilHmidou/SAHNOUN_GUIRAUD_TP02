@@ -1,0 +1,35 @@
+.centered-image {
+  display: block; /* Permet à l'image de se comporter comme un bloc */
+  margin: 0 auto; /* Centre l'image horizontalement */
+  border-radius: 15px; /* Arrondir les bords de l'image */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée légère */
+
+  max-width: 360px; /* Limite la largeur de l'image à 720px maximum */
+  max-height: 720px; /* Limite la hauteur de l'image à 1080px maximum */
+  width: 100%; /* Assure que l'image prend toute la largeur disponible sans dépasser le max-width */
+  height: auto; /* Conserve le ratio d'aspect de l'image */
+}
+
+/* Centrer le texte */
+.text-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style pour le texte "ARRIVAL" */
+.title {
+  margin-top: 0;
+  font-size: 40px;  /* Taille du texte plus grande */
+  font-weight: bold;  /* Texte en gras */
+  font-family: 'Roboto', sans-serif;  /* Police spéciale (remplacer par la police de votre choix) */
+  color: #000;  /* Couleur du texte */
+  margin-bottom: 5px;
+}
+
+/* Style pour le texte "Denis Villeneuve 2016" */
+.subtitle {
+  margin-top: 0;
+  font-weight: bold;  /* Texte en gras */
+  font-style: italic;  /* Texte en italique */
+  color: #555;  /* Couleur plus douce pour le sous-texte */
+}

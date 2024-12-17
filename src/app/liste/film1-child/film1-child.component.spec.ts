@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RouteChildComponent } from './route-child.component';
+import { Film1ChildComponent } from './film1-child.component';
 
-describe('RouteChildComponent', () => {
-  let component: RouteChildComponent;
-  let fixture: ComponentFixture<RouteChildComponent>;
+describe('Film1ChildComponent', () => {
+  let component: Film1ChildComponent;
+  let fixture: ComponentFixture<Film1ChildComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouteChildComponent]
+      imports: [Film1ChildComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(RouteChildComponent);
+    fixture = TestBed.createComponent(Film1ChildComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
